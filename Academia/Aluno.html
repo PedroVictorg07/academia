@@ -1,0 +1,55 @@
+<!--Iniciando a pagina-->
+<!DOCTYPE html>
+<!--Linguagem que vai ser usada na pagina-->
+<html lang="pt-br">
+
+<!--head: Tudo que estiver aqui dentro não sera apresentado no site, é como se fosse uma backstage-->
+<head> 
+
+    <!--UTF-8: é uma tag HTML que define o conjunto de caracteres a ser utilizado na exibição do conteúdo de um site-->
+    <meta charset="UTF-8"> 
+    <!--Titulo da página-->
+    <title>Atividade 1</title>
+    <!--Chamando o css para dentro da página html-->
+    <link rel="stylesheet" href="Cadastro.css">
+
+</head>
+
+<!--Body: Vai ser o conteudo visual da pagina, tudo que botar aqui dentro, será apresentado pro usuario-->
+<body>
+    <!--Nav: Barra de navegação do usuario-->
+    <nav>
+        <!--UL: Lista não ordenada -->
+        <ul>
+            <!--LI: lista-->
+            <li><a href="default.asp">Login</a></li> <!--A: é um link-->
+            <li><a href="news.asp">Planos</a></li>
+            <li><a href="contact.asp">Alunos</a></li>
+            <li><a href="about.asp">Matricula </a></li>
+      </ul>
+    </nav>
+
+    <div class="hero">
+
+        <h1>SEJA BEM-VINDO Z2. 
+        <br>Faça o seu cadastro  </h1> <!--Titulo da página, so pode existir apenas um em todo site-->
+
+            <div class="informacoes">
+                <form action="Cadastro">
+                <input type="text" id="Nome" placeholder="Nome" required>
+                <input type="date" id="DataNascimento" placeholder="Data de nascimento" required> 
+                <input type="text" id="CPF" placeholder="CPF" required>
+                <input type="text" id="genero" placeholder="EX: Masculino, feminino ou outro" required>
+                <input type="tel" id="Telefone" placeholder="Telefone" required>
+                <input type="button" value="Acessar" onclick="CadastroAluno()">
+            </form>
+        </div>
+    </div>
+
+    <div class="resultado" id="resultado"></div>
+
+    <script src="Aluno.js">
+        
+    </script>
+</body>
+</html>
